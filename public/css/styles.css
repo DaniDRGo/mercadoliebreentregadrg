@@ -1,0 +1,116 @@
+/*Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    font-size: 12px;
+    background-color:#ebebeb;
+    width: 100%;
+    box-sizing: border-box;
+}
+.navheader{
+    text-align: left;
+    padding-left:3%;
+    }
+.navheader a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 2%;
+    font-size: 130%;
+    color: #03264C;
+}
+.navheader i{
+    color: #03264C;
+}
+.banner img{
+    width: 115vw;
+}    
+.titulares{
+    font-size: 24px;
+}
+.precios{
+    font-size: 18px;
+}
+.descripcion-descuento{
+    font-size: 16;
+}
+header{
+    background-color:#EAC926;
+}
+#pl16{
+    text-align: left;
+    padding: 3%;
+}
+#pl17{
+    text-align: center;
+}
+.burger-menu{
+    color: white;
+    background-color: #03264C;
+    text-align: center;
+    display: block;
+    max-width:10%;
+    max-height:15%;
+    padding: 1%;
+    border-radius: 6px;
+    margin: auto;
+    font-size: 160%;
+}
+main{
+    width:90vw
+}
+.foto-articule{
+    display: block;
+    margin-bottom: 0px;
+    margin-left: 10vw;
+    font-size: 100%;
+}
+.articulo-descripcion{    
+    margin-top: 0px;
+    margin-bottom: 15px;
+    margin-left: 10vw;
+    font-size: 100%;
+    background-color: white;
+}
+.pl41 i{
+    background-color: white;
+    font-size: 20px;
+    color: #39b54a;
+    width:10%;
+    border:solid
+    }
+footer{
+    text-align: center;
+    font-size: 15px;
+    background-color: white;
+    padding: 3rem 0rem;
+    }
+.iconosfooter{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color:#03264C;
+    margin-top: 5px;
+}
+.articulefooter{
+    font-weight: bold;
+}
+.pl90{
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+.pl92{
+    text-align:center;
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+/*media query*/
+
