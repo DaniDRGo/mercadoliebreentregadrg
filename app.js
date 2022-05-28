@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const path = require ('path')
-
+const port = process.env.PORT
 app.use(express.static('public'))
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("servidor levantado")
 })
 app.get('/',(req,res)=>{
