@@ -8,16 +8,34 @@ Verde: #39b54a;*/
 
 *{
     font-family: 'Roboto', sans-serif;
+   /* margin: 0px; me rompe*/
+    padding: 0px;
+    box-sizing: border-box;
 }
+/****header****/
 body{
     font-size: 12px;
     background-color:#ebebeb;
     width: 100%;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
+}
+.logobuscador{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.logo{
+    width: 50%;
+    padding: 5px;
+
+}
+.nav{
+    line-height: 5px;
 }
 .navheader{
     text-align: left;
     padding-left:3%;
+    display: none;
     }
 .navheader a{
     text-decoration: none;
@@ -30,8 +48,10 @@ body{
     color: #03264C;
 }
 .banner img{
-    width: 115vw;
-}    
+    width: 100%;
+    margin-bottom: -4px ;
+}
+  
 .titulares{
     font-size: 24px;
 }
@@ -44,12 +64,19 @@ body{
 header{
     background-color:#EAC926;
 }
-#pl16{
-    text-align: left;
-    padding: 3%;
-}
+header input{
+    width: 80%;
+    height: 40px;
+    margin: auto;
+border-radius: 3px 0px 0px 3px;
+border: none;
+font-style: 150%;
+padding: 0px 10px;
+    }
 #pl17{
     text-align: center;
+    width: 100%;
+    color: #03264C;
 }
 .burger-menu{
     color: white;
@@ -63,29 +90,77 @@ header{
     margin: auto;
     font-size: 160%;
 }
+#lupa{
+    height: 40px;
+    margin: auto;
+    border: none;
+    background-color: white;
+    color: #03264C;
+    width: 20%;
+}
+#arreglobuscador{
+    width: 50%;
+}
+/****main****/  
 main{
-    width:90vw
+    width:90vw;
+    margin: auto;
 }
-.foto-articule{
+
+main section h3{
+    margin-top: 5%;
+}
+
+main section article{
+    
+    margin: 10px 0px ;
+    background-color: white;
+}
+ .descripcion{
+     border-top: #ebebeb 1px solid;
+     box-sizing: border-box;
+     padding: 1px 15px;
+     width: 100%;
+     line-height: 6%;
+     position: relative;     
+ }
+
+ main article i{
     display: block;
-    margin-bottom: 0px;
-    margin-left: 10vw;
-    font-size: 100%;
-}
-.articulo-descripcion{    
-    margin-top: 0px;
-    margin-bottom: 15px;
-    margin-left: 10vw;
-    font-size: 100%;
-    background-color: white;
-}
-.pl41 i{
-    background-color: white;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color:#39b54a
+ }
+
+ .flex-juntar{
+     display: flex;
+     flex-wrap: wrap;
+ }
+ .descripcion-art{
+     display: none;
+     font-weight: bold;
+     
+ }
+ .precios{
+    font-weight: bold;
+    flex-grow: 0.3;
+ }
+.descripsion-descuento{
     color: #39b54a;
-    width:10%;
-    border:solid
-    }
+    flex-grow: 0.7;
+    font-size: 120%;
+    margin: auto;
+    padding: 3%;
+}
+/****footer****/
 footer{
     text-align: center;
     font-size: 15px;
@@ -101,12 +176,12 @@ footer{
 .articulefooter{
     font-weight: bold;
 }
-.pl90{
+.pl148{
     text-align: left;
     margin-top: 10%;
     margin-left: 1%;
 }
-.pl92{
+.pl145{
     text-align:center;
     margin-top: 0%;
     margin-left: 15%;
@@ -114,3 +189,90 @@ footer{
 }
 /*media query*/
 
+@media (min-width: 361px){
+    .descripcion-art{
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .navheader {
+        display: block;
+        width: 40%;
+        padding: 2px;
+        text-align: center;
+        color: #03264C;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .grupo-seccion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main section article{
+    width: 50%;
+    margin:0.25rem auto
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+    .logobuscador{
+        flex-wrap: nowrap;
+    }
+    .logo {
+        width: 33.3%;
+        padding: 5px
+    }
+    #arreglobuscador {
+        width: 33.3%;
+        margin: auto;
+        padding: 1%;
+    }
+ header input{
+    height: 20px;
+ }
+ #lupa {
+    height: 20px;
+    margin: auto;
+    color: #03264C;
+    width: 10%;
+    padding: 1%;
+    margin-left: 2%;
+}
+#pl17 {
+    text-align: center;
+    width: 33.3%;
+    color: #03264C;
+    margin: auto;
+}
+.nav{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    }
+.nav li a{
+    display: block;
+    padding: 0.7rem;
+}
+.nav li{
+    display: inline-block;
+}
+}
+@media (min-width: 769px){
+    .descripcion-art{
+        display: block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .navheader{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    main section article{
+        width: 25%;
+        margin:2%;
+        display: inline-block;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+        }
+        .grupo-seccion{
+            flex-wrap: nowrap;
+        }
+}
